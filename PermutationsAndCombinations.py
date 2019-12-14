@@ -19,3 +19,14 @@ for p1 in itertools.permutations(election.values()):
     print(p1)
 
 # Combinations: Order does not matter-no copies with same inputs
+# Combinations are similar to permutations in that they list a set of items but for 
+# combinations no set has the exact same elements as another.
+
+# We have a list of colors we can paint with and so we'll have a variable called 
+# colors for painting and we'll have a list with red, blue, purple, orange, yellow 
+# and pink but when we paint, we only want to paint with two colors and so we can use 
+# the combinations method inside the itertools module.
+
+colorsForPainting = ["Red", "Blue", "Purple", "Orange", "Yellow", "Pink"]
+for c in itertools.combinations(colorsForPainting, 2):
+    print(c)
